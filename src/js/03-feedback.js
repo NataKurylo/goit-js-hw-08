@@ -29,7 +29,7 @@ function handleSubmit(event) {
         return
     }
 
-    console.log(userData);
+    console.log(JSON.parse(localStorage.getItem('feedback-form-state')));
     event.currentTarget.reset();
     localStorage.removeItem('feedback-form-state');
 }
